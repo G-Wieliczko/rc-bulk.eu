@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patua One'), local('PatuaOne-Regular'), url(ZXuke1cDvLCKLDcimxB44_lu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@media screen and (max-width: 1199.99px) {
+    #canvas, #behind, #slideshow {
+    	width:100vw;
+		margin-left:0;
+	}
+}
+@media screen and (min-width: 1200px) {
+    #canvas, #behind, #slideshow {
+    	width:1200px;
+		margin-left:calc(50vw - 600px);
+	}
+}
+#canvas, #behind {
+	position:fixed;	
+	top:0px;
+	background:transparent;
+	left: 0;
+	height:100vh;
+	}
+#canvas {
+	z-index:2;
+}
+#behind {
+	background: url(background.png) no-repeat 0px center fixed; 
+	background-size: cover;
+	z-index:0;
+	background-color:#eee;
+	box-sizing: border-box;
+}
+#slideshow {
+	position:relative;
+	top:0;
+	left:0;
+	z-index:7;
+	text-align:center;
+	font-size:0px;
+}
+#mmc, #cmc, #a4CEC, #a4CMC, #a5FADB, #fake5fadb, #herbalBlend, #herbalBlend, #hexenNeh {
+	width:0px;
+	height:auto;
+	overflow:hidden;
+	transition: width 1s, opacity 1s;
+	cursor:pointer;
+	opacity:0;
+}
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#fff;
+	font-family: 'Patua One', cursive;
+	font-size:25px;	
+	background-color:#a7a596;
+	overflow-x: hidden;
+	}
+h1 {
+	font-size:40px;
+}
+.title {
+	text-align:center;
+}
+.right {
+	text-align:right;
+	padding-right:1em;
+}
+.left {
+	text-align:left;
+}
+a {
+	color:#850;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+.bo, .newsletter {
+	border:1px solid #000;
+	background-color:#fff;
+	border-radius: 15px;
+	padding:3px;
+	padding-left:8px;
+	padding-right:8px;
+	cursor:pointer;	
+}
+.bo2 {
+	display:table;
+	text-align:center;
+}
+.bo, .bo2, .newsletter {
+	position:relative;
+	z-index:3;
+	transition: border 0.5s;
+}
+.bo:hover, .bo2:hover {
+	border:1px solid #970;
+}
+.newsletter {
+	width:100%;
+	box-sizing: border-box;
+	text-align:center;
+	font-size:20px;	
+	font-family: 'Patua One', cursive;
+}
+.newsletter:focus {
+	border:1px #a50 solid;
+}
+.table1 {border:2px solid #000; 
+	cursor:pointer;
+	margin-bottom:10px;
+}
+.table1, #description, .bo2 {
+	margin-left:calc(50vw - 128px - 2.5vw);
+	width:calc(256px + 5vw);	
+	box-sizing: border-box;
+	position:relative;
+}
+.mrschengen {
+	margin-left:calc(50vw - 40.5px);
+	box-sizing: border-box;
+	margin-top:10px;
+	position:relative;
+	z-index:1;
+}
+.table1, #description {
+	background-color:rgba(237,237,237,0.35);
+	border-radius:20px;
+	padding:20px;	
+}
+.table2 {
+	margin:auto;
+	margin-top:-5px;
+	margin-bottom:-5px;
+}
+.hover1, .hover2, .hover3, .hover4, .hover5, .hover6, .hover7, .hover8, .hover9 {
+	position:absolute;
+	text-align:center;
+	color:#777;
+	margin-left:-24px;
+	margin-top:5px;
+	width:calc(256px + 5vw);
+	box-sizing: border-box;
+	transition: 0.5s;
+	opacity:0;
+}
+.hover1, .hover2, .hover4, .hover5, .hover6, .hover7, .hover8, .hover9 {
+	font-size:10px;	
+}
+.hover3 {
+	font-size:18px;	
+}
+.hover1start:hover + .hover1 {
+	opacity:1;
+}
+.hover2start:hover + .hover2 {
+	opacity:1;
+}
+.hover4start:hover + .hover4 {
+	opacity:1;
+}
+.hover5start:hover + .hover5 {
+	opacity:1;
+}
+.hover6start:hover + .hover6 {
+	opacity:1;
+}
+.hover7start:hover + .hover7 {
+	opacity:1;
+}
+.hover8start:hover + .hover8 {
+	opacity:1;
+}
+.hover9start:hover + .hover9 {
+	opacity:1;
+}
+#description {
+	border:2px solid #000;
+	text-align:center;
+	margin-bottom:0px;
+	margin-top:0px;
+	overflow:hidden;
+	display:block;
+	height: 0px;
+	box-sizing: border-box;
+	transition: height 0.5s, opacity 0.5s, margin-bottom 0.5s, margin-top 0.5s;
+    opacity:0;
+    cursor:pointer;
+}
+.large {
+	font-size:150%;
+}
+.small {
+	font-size:80%;
+	text-align: justify;
+    text-justify: inter-word;
+}
+.center, .frontDescription {
+	text-align:center;
+}
+.sample {display:block;}
+.pointer {
+	cursor:pointer;
+	color:#850;
+	z-index:5;
+	position:relative;
+
+}
+.redColor {
+	color: red;
+}
+
+.descSecond {
+	color: red;
+	font-size: 12px;
+	padding-bottom: 15px;
+}

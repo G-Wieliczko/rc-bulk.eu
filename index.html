@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>Rc-Bulk Order</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="description" content="Distributor and manufactor of Research Chemicals, buy wholesale 3MMC 4CMC 6APB">
+			<meta name="msapplication-TileColor" content="#ffffff">
+			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+			<meta name="theme-color" content="#ffffff">
+			<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<canvas id="canvas" width="1200" height="588"></canvas>
+		<div id="behind" style="background-size: 100vw;"></div>
+		<div id="slideshow">
+			<img id="mmc" alt="3mmc crystals" src="./media/3mmc_1200.jpg" onclick="closeimg(&quot;mmc&quot;);">
+			<img id="cmc" alt="4cmc crystals" src="./media/4cmc_1200.jpg" onclick="closeimg(&quot;cmc&quot;);">
+			<img id="a4CEC" alt="4cmc crystals" src="./media/4CEC.jpg" onclick="closeimg(&quot;a4CEC&quot;);">
+			<img id="a4CMC" alt="4cmc crystals" src="./media/4CMC.jpg" onclick="closeimg(&quot;a4CMC&quot;);">
+			<img id="a5FADB" alt="4cmc crystals" src="./media/5FADB.jpg" onclick="closeimg(&quot;a5FADB&quot;);">
+			<img id="fake5fadb" alt="4cmc crystals" src="./media/fake5fadb.jpg" onclick="closeimg(&quot;fake5fadb&quot;);">
+			<img id="herbalBlend" alt="4cmc crystals" src="./media/herbalBlend.jpg" onclick="closeimg(&quot;herbalBlend&quot;);">
+			<img id="hexenNeh" alt="4cmc crystals" src="./media/hexenNeh.jpg" onclick="closeimg(&quot;hexenNeh&quot;);">
+		</div>
+		<div id="description" style="height: 0px; opacity: 0; margin-bottom: 0px; margin-top: 0px;">
+			<span class="large bo" onclick="var x=document.getElementById(&quot;description&quot;).style; x.height=&quot;0px&quot;; x.opacity=&quot;0&quot;; x.marginBottom=&quot;0px&quot;; x.marginTop=&quot;0px&quot;; changespeed(1);">Rc-Bulk.eu</span>
+			<div class="small">
+				<br>We manufacture 4-CEC, 4-CMC, 5FADB, HEXEN(NEH), FAKE HASH (5FADB 1:10), HERBAL BLEND (5FADB 1:10). Purity is 99%, crystals. See images <span class="pointer" onclick="showa4CEC();">here</span> &amp; <span class="pointer" onclick="showa4CMC();">here</span> &amp; <span class="pointer" onclick="showa5FADB();">here</span> &amp; <span class="pointer" onclick="showfake5fadb();">here</span> &amp; <span class="pointer" onclick="showherbalBlend();">here</span> &amp; <span class="pointer" onclick="showhexenNeh();">here</span>.
+			<br><br>We ship per courier within the EU respecting local laws. A personal pickup from the Netherlands is also possible.
+			<br><br>We accept wire transfer and bitcoins.
+			<!--<br><br><span class="bo center sample">100g Sample:</span>
+			<br><table class="table2">
+				<tbody>
+					<tr>
+						<td>400€</td>
+						<td>/</td>
+						<td class="left">3mmc</td>
+					</tr>
+					<tr>
+						<td>300€</td>
+						<td>/</td>
+						<td class="left">4cmc</td>
+					</tr>
+				</tbody>
+			</table> 
+			<br><input class="newsletter" type="text" placeholder="get newsletter" onclick="this.placeholder=&#39;enter your email&#39;; this.style.backgroundColor=&#39;#fff&#39;;" onchange="getmail(this.value,this);" onkeydown="this.style.backgroundColor=&#39;#fff&#39;;">-->
+			</div>
+		</div>
+		<table class="table1">
+			<tbody><tr><td colspan="2" class="title"><span class="bo">Welcome in RC-bulk</span></td></tr>
+				
+				<tr><td>Welcome, we are a European distributor of RC products. We have wholesale quantities of products. All products sent in the Shengen EU zone. No customs control. Shipping in 2-4 days. Prices below.</td></tr>
+			</tbody>
+		</table>
+		<table class="table1">
+			<tbody>
+
+				<tr><td colspan="2" class="title"><span class="bo hover4start" onclick="showa4CEC();">4-CEC:</span>
+				</td></tr>
+				<tr><td colspan="2"></td></tr>
+				<tr><td class="right">1-4KG</td><td>700€/kg</td></tr>
+				<tr><td class="right">5-9KG</td><td>600€/kg</td></tr>
+				<tr><td class="right">10+kg</td><td>500€/kg</td></tr>
+				<tr><td colspan="2"></td></tr>
+
+				<tr><td colspan="2" class="title"><span class="bo hover5start" onclick="showa4CMC();">4-CMC:</span>
+				</td></tr>
+				<tr><td colspan="2"></td></tr>
+				<td class="right">1-4KG</td><td>2400€/kg</td></tr>
+				<tr><td class="right">5-9KG</td><td>2100€/kg</td></tr>
+				<tr><td class="right">10+kg</td><td>2000€/kg</td></tr>
+				<tr><td colspan="2"></td></tr>
+
+				<tr><td colspan="2" class="title"><span class="bo hover6start" onclick="showa5FADB();">5FADB:</span>
+				</td></tr>
+				<tr><td colspan="2"></td></tr>
+				<td class="right">1-4KG</td><td>1500€/kg</td></tr>
+				<tr><td class="right">5-9KG</td><td>1400€/kg</td></tr>
+				<tr><td class="right">10+kg</td><td>1280€/kg</td></tr>
+				<tr><td colspan="2"></td></tr>
+
+				<tr><td colspan="2" class="title"><span class="bo hover7start" onclick="showfake5fadb();">FAKE HASH:</span>
+				</td></tr>
+				<tr><td colspan="2"></td></tr>
+				<td class="right">1-4KG</td><td>700€/kg</td></tr>
+				<tr><td class="right">5-9KG</td><td>600€/kg</td></tr>
+				<tr><td class="right">10+kg</td><td>550€/kg</td></tr>
+				<tr><td colspan="2" class="descSecond"><div>this product can be done with any other cannabinoid, if you are interested, please write to us</div></td></tr>
+
+				<tr><td colspan="2" class="title"><span class="bo hover8start" onclick="showherbalBlend();">HERBAL BLEND:</span>
+				</td></tr>
+				<tr><td colspan="2"></td></tr>
+				<td class="right">1-4KG</td><td>700€/kg</td></tr>
+				<tr><td class="right">5-9KG</td><td>600€/kg</td></tr>
+				<tr><td class="right">10+kg</td><td>550€/kg</td></tr>
+				<tr><td colspan="2"colspan="2" class="descSecond"><div>this product can be done with any other cannabinoid, if you are interested, please write to us</div></td></tr>
+
+				<tr><td colspan="2" class="title"><span class="bo hover9start" onclick="showhexenNeh();">HEXEN(NEH):</span>
+				</td></tr>
+				<tr><td colspan="2"></td></tr>
+				<td class="right">1-4KG</td><td>1100€/kg</td></tr>
+				<tr><td class="right">5-9KG</td><td>1000€/kg</td></tr>
+				<tr><td class="right">10+kg</td><td>950€/kg</td></tr>
+				<tr><td colspan="2"></td></tr>
+
+				<tr><td colspan="2" class="title"><span class="bo hover3start" onclick="var x=document.getElementById(&quot;description&quot;); x.style.height=x.scrollHeight+20+&quot;px&quot;; x.style.opacity=&quot;1&quot;; x.style.marginBottom=&quot;20px&quot;; x.style.marginTop=&quot;40px&quot;; changespeed(0); scrolltotop=window.scrollY||window.pageYOffset; closeimg(&quot;mmc&quot;); closeimg(&quot;a4CEC&quot;); closeimg(&quot;a4CMC&quot;); closeimg(&quot;a5FADB&quot;); closeimg(&quot;fake5fadb&quot;); closeimg(&quot;herbalBlend&quot;); closeimg(&quot;hexenNeh&quot;); closeimg(&quot;cmc&quot;);">more info</span>
+				</td></tr>
+			</tbody>
+		</table>
+
+		<br><div class="bo bo2"><a href="mailto:info@rc-bulk.eu">Contact with us by email:</a><script>var em="in"+"fo"+"@rc-bulk"+""+".eu";document.write("<a href=\"mailto:"+em+"\">"+em+"</a>");</script> <a href="mailto:info@rc-bulk.eu"> or via the contact form.</a></div>
+		<br><div class="bo bo2">If you are interested in other RC products, we can also get them for you! Check our price list! Waiting time 10-14 days. Shipped from our warehouses in the EU also without customs control!</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
